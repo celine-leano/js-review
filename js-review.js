@@ -17,3 +17,20 @@ for (var i = 1; i <= 100; i++) {
         console.log(i);
     }
 }
+
+// countBs function
+function countBs(string) {
+    var count = 0;
+
+    for (var i = 0; i < string.length; i++) {
+        if (string.charAt(i) == 'B') {
+            count++;
+        }
+    }
+    return "There are " + count + " uppercase B's in " + string + "<br>";
+}
+
+document.write(countBs("elephant"));
+document.write(countBs("blueberries"));
+document.write(countBs("BLUEBERRIES"));
+document.write(countBs("BLUEberries"));

@@ -27,10 +27,25 @@ function countBs(string) {
             count++;
         }
     }
-    return "There are " + count + " uppercase B's in " + string + "<br>";
+    return "There is/are " + count + " uppercase B(s) in " + string + "<br>";
 }
 
 document.write(countBs("elephant"));
 document.write(countBs("blueberries"));
 document.write(countBs("BLUEBERRIES"));
 document.write(countBs("BLUEberries"));
+
+// countChar function
+function countChar(string, character) {
+    var count = 0;
+
+    for (var i = 0; i < string.length; i++) {
+        if (string.charAt(i) == character) {
+            count++;
+        }
+    }
+    return "There is/are " + count + " " + character + "(s) in " + string + "<br>";
+}
+
+document.write(countChar("lemonade", 'a'));
+document.write(countChar("RRRrrRR", 'R'));

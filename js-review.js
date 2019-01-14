@@ -48,4 +48,13 @@ function countChar(string, character) {
 }
 
 document.write(countChar("lemonade", 'a'));
-document.write(countChar("RRRrrRR", 'R'));
+document.write(countChar("RRRrrrRR", 'R'));
+
+// rewrite countBs to use countChar
+function newCount(string) {
+    return countChar(string, 'B');
+}
+
+document.write(newCount("BBB"));
+document.write(newCount("bbb"));
+document.write(newCount("berries"));
